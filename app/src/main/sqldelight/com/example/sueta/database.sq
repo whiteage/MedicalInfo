@@ -1,0 +1,22 @@
+CREATE TABLE database (
+    cardName TEXT NOT NULL PRIMARY KEY,
+    userName TEXT,
+    blood TEXT,
+    allergy TEXT,
+    diagnoses TEXT,
+    medicines TEXT,
+    contacts TEXT,
+    ps TEXT,
+    qrCodeBase64 TEXT
+);
+
+insertOrReplaceIntoDatabase:
+INSERT OR REPLACE INTO database(
+  cardName, userName, blood, allergy, diagnoses, medicines, contacts, ps, qrCodeBase64
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+getFromDataBase:
+SELECT * FROM database;
+
+deleteFromDataBase:
+DELETE FROM database WHERE cardName = ?;
