@@ -43,7 +43,7 @@ class Notification(){
         ) {
             return
         }
-        Log.d("valera ne sosal", "verim?")
+        Log.d("", "verim?")
         notificationManager.notify(1001, builder.build()) // 1001 — уникальный ID уведомления
     }
 

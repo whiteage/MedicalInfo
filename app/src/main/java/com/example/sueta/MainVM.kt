@@ -59,8 +59,7 @@ class MainVM(application: Application) : AndroidViewModel(application){
 
     fun sendNotification(){
         notification.createNotification(context = application)
-        Log.d("valera sosal", "sosal")
-        notification.showNotification(context =  application, title = "SOSAL?", message = "DA")
+        notification.showNotification(context =  application, title = "SOSAL?", message = "NET")
     }
 
 
